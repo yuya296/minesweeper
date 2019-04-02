@@ -1,0 +1,109 @@
+body {
+  background-color: #263238;
+  font-family: "Courier";
+  width: 400px;
+  margin: auto;
+  position: relative;
+}
+
+#menu {
+  width: 400px;
+  margin: auto;
+  color: white;
+  margin-bottom: 30px;
+}
+
+#menu h3 {
+  text-align: center;
+  font-size: 32px;
+}
+
+table {
+  margin: 0 auto; /* 中央寄せ */
+  width: 400px;
+  height: 400px;
+  table-layout: fixed;
+  user-select: none;
+  transition: 1s;
+}
+td {
+  background-color: #455A64;
+  color: #ffffff;
+  text-align: center;
+  height: auto;
+  transition: 0.2s;
+}
+
+/* 状態のクラス */
+/* 開封されていないマス */
+.closed {
+  cursor: pointer;
+}
+.closed:hover {
+  background-color: #354A54;
+}
+/* 旗 */
+.flag {
+  color: red;  /* 旗の色を赤で表示 */
+}
+/* 開封済みマス */
+.opened {
+  background-color: #263238;
+  cursor: default;
+}
+/* 爆弾マス */
+.bomb {
+  background-color: red;
+  cursor: default;
+}
+
+.opac {
+  opacity: 0.3;
+}
+
+/* ダイアログボックスのクラス */
+
+#dialog {
+  display: inline-block;
+  margin: auto auto;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  top: 233px;
+}
+
+#dialog-msg {
+  color: white;
+}
+#dialog-msg h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #668ad8;
+  color: white;
+  padding: 0 20px;
+  border-radius: 3px;
+  border-bottom: solid 4px #627295;
+}
+.btn:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+#menu p {
+  display: inline;
+}
+
+#flagicon {
+  color: red;
+}
+
+#flagcount {
+  text-align: right;
+}
